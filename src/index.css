@@ -627,7 +627,16 @@
     width: 100%;
   }
 
+    @media (width < 40rem) {
+    .pb-2 {
+      padding-block: 2rem;
+    }
+  }
+
   @media (width >= 40rem) {
+     .pb-2 {
+      padding-block: 2rem;
+    }
     .container {
       max-width: 40rem;
     }
@@ -4896,4 +4905,8 @@ html {
   20%, 50% {
     opacity: 0;
   }
+}
+
+.pl-10{
+  padding-left: 20px;
 }

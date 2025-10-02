@@ -100,13 +100,15 @@ export default function App() {
           <div className="absolute inset-0 bg-black/50" />
         </div>
         
-        <div className="relative w-full px-4">
+        <div className="relative w-full px-4 pb-2">
           <div className="container mx-auto">
             {/* Hero Content */}
             <div className="text-center text-white mb-16">
               <h1 className="text-6xl md:text-8xl mb-6">ASARE</h1>
               <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-                Where automotive engineering meets haute couture. Fashion inspired by the world's most iconic vehicles.
+                Asarē is an afro-innovative fashion brand, rooted in avant-garde form and playful construction. our
+                layered, voluminous silhouettes are mapped by the parts and pieces of vehicles — made for those who
+                feel alien in the ordinary.
               </p>
             </div>
             
@@ -142,23 +144,22 @@ export default function App() {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl mb-6">About ASARE</h2>
+              <h2 className="text-4xl mb-6">Who We Are</h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                ASARE is a revolutionary fashion house that draws inspiration from the world's most 
-                iconic vehicles. From the sleek curves of a Ferrari to the rugged elegance of a 
-                Range Rover, we translate automotive design language into wearable art.
+                Asarē is a revolutionary fashion house that draws inspiration from the world's most iconic
+                vehicles and automobiles. from the sleek curves of a Ferrari to the rugged elegance of a
+                spaceship, or a bicycle, or even a skateboard, we translate automotive and vehicle design
+                language into wearable afro cyber-art.
               </p>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Founded by automotive enthusiasts and fashion visionaries, our collections 
-                celebrate the marriage of engineering precision and aesthetic beauty. Each piece 
-                embodies the spirit of innovation, performance, and luxury that defines the 
-                automotive world.
+                Founded by African automotive enthusiasts and fashion creative visionaries, our collections
+                celebrate the marriage of engineering precision and visual craft. each piece embodies the spirit
+                of innovation, performance, and luxury that defines the automotive world.
               </p>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Our design philosophy centers on the belief that fashion, like automotive design, 
-                should push boundaries while maintaining functionality and style. Every stitch, 
-                every line, every detail is crafted with the same attention to detail found in 
-                the world's finest vehicles.
+                Our design philosophy centers on the belief that fashion, like automotive design, should push
+                boundaries while maintaining functionality and style. every stitch, every line, every detail is
+                crafted with the same attention to detail found in the world's finest vehicles.
               </p>
               <Button>Discover Our Vision</Button>
             </div>
@@ -177,9 +178,10 @@ export default function App() {
       <section id="categories" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl mb-4">Collections by Style</h2>
+            <h2 className="text-4xl mb-4">System Catalog</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Each category reflects a different aspect of automotive culture, from casual daily drives to high-performance racing
+              Each category mirrors a facet of automotive culture, from everyday utility to high-performance
+              engineering.
             </p>
           </div>
           
@@ -202,7 +204,8 @@ export default function App() {
           <div className="text-center mb-16">
             <h2 className="text-4xl mb-4">Current Collection</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Our latest pieces inspired by iconic vehicles, where automotive excellence meets fashion innovation
+             In this collection, our designs are mapped by the function-first philosophy of the Land Rover
+              Defender, 90s build, and its contrasting color panels.
             </p>
           </div>
           
@@ -237,7 +240,8 @@ export default function App() {
           <div className="text-center mb-16">
             <h2 className="text-4xl mb-4">Visit Our Flagship Store</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Experience the fusion of automotive and fashion design at our innovative showroom
+              Book a private styling session in our automotive-inspired fitting rooms. Our stylists will help you
+              find pieces that match your favorite vehicle's aesthetic.
             </p>
           </div>
           
