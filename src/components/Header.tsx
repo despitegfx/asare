@@ -7,7 +7,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <h1 className="text-2xl">ASARE</h1>
+          <h1 className="text-2xl pl-10">ASARE</h1>
         </div>
 
         {/* Desktop Navigation */}
