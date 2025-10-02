@@ -7,7 +7,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <h1 className="text-2xl pl-10">ASARE</h1>
+          <h1 className="text-2xl pl-10">asarē</h1>
         </div>
 
         {/* Desktop Navigation */}
@@ -27,9 +27,9 @@ export function Header() {
           <a href="#contact" className="text-sm hover:text-primary transition-colors">
             Contact
           </a>
-          <a href="#careers" className="text-sm hover:text-primary transition-colors">
+          {/* <a href="#careers" className="text-sm hover:text-primary transition-colors">
             Careers
-          </a>
+          </a> */}
         </nav>
 
         {/* Icons */}

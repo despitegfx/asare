@@ -7,6 +7,7 @@ import { Button } from './components/ui/button';
 import { Input } from './components/ui/input';
 import { Card, CardContent } from './components/ui/card';
 import { ArrowRight, MapPin, Phone, Mail, Instagram, Twitter, Facebook, Car, Zap, Users } from 'lucide-react';
+import { log } from 'console';
 
 export default function App() {
   const galleryImages = [
@@ -33,27 +34,27 @@ export default function App() {
 
   const collections = [
     {
-      name: 'Tesla Model S Blazer',
+      name: 'tesla model s blazer',
       price: '$450',
-      vehicle: 'Tesla Model S',
+      vehicle: 'tesla model s',
       image: "https://images.unsplash.com/photo-1697914584244-26e5d58eda67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBjYXIlMjBmYXNoaW9ufGVufDF8fHx8MTc1NjczOTM5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     },
     {
-      name: 'Porsche 911 Leather Jacket',
+      name: 'porsche 911 leather jacket',
       price: '$650',
-      vehicle: 'Porsche 911',
+      vehicle: 'porsche 911',
       image: "https://images.unsplash.com/photo-1610643981357-8b6a16ae2521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3RvcmN5Y2xlJTIwamFja2V0JTIwbGVhdGhlcnxlbnwxfHx8fDE3NTY3MzkzOTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     },
     {
-      name: 'Ferrari F1 Racing Suit',
+      name: 'ferrari f1 racing suit',
       price: '$850',
-      vehicle: 'Ferrari F1',
+      vehicle: 'ferrari f1',
       image: "https://images.unsplash.com/photo-1605868752262-58f35d6ef92b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyYWNpbmclMjBzdWl0JTIwZmFzaGlvbnxlbnwxfHx8fDE3NTY3Mzk0MDN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     },
     {
-      name: 'Range Rover Executive Coat',
+      name: 'range rover executive coat',
       price: '$720',
-      vehicle: 'Range Rover',
+      vehicle: 'range rover',
       image: "https://images.unsplash.com/photo-1729040268167-b89ff6b163c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MXx8fHwxNzU2NzM5NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     }
   ];
@@ -85,6 +86,8 @@ export default function App() {
     }
   ];
 
+  let year = new Date();
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -94,7 +97,7 @@ export default function App() {
         <div className="absolute inset-0">
           <ImageWithFallback
             src="https://images.unsplash.com/photo-1697914584244-26e5d58eda67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBjYXIlMjBmYXNoaW9ufGVufDF8fHx8MTc1NjczOTM5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="ASARE Hero"
+            alt="asarē hero"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/50" />
@@ -104,9 +107,9 @@ export default function App() {
           <div className="container mx-auto">
             {/* Hero Content */}
             <div className="text-center text-white mb-16">
-              <h1 className="text-6xl md:text-8xl mb-6">ASARE</h1>
+              <h1 className="text-6xl md:text-8xl mb-6">asarē</h1>
               <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-                Asarē is an afro-innovative fashion brand, rooted in avant-garde form and playful construction. our
+                asarē is an afro-innovative fashion brand, rooted in avant-garde form and playful construction. our
                 layered, voluminous silhouettes are mapped by the parts and pieces of vehicles — made for those who
                 feel alien in the ordinary.
               </p>
@@ -131,7 +134,7 @@ export default function App() {
             
             <div className="text-center mt-16">
               <Button size="lg" className="bg-white text-black hover:bg-gray-100">
-                Explore Collection
+                explore collection
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
@@ -144,29 +147,29 @@ export default function App() {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl mb-6">Who We Are</h2>
+              <h2 className="text-4xl mb-6">who we are</h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Asarē is a revolutionary fashion house that draws inspiration from the world's most iconic
+                asarē is a revolutionary fashion house that draws inspiration from the world's most iconic
                 vehicles and automobiles. from the sleek curves of a Ferrari to the rugged elegance of a
                 spaceship, or a bicycle, or even a skateboard, we translate automotive and vehicle design
                 language into wearable afro cyber-art.
               </p>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Founded by African automotive enthusiasts and fashion creative visionaries, our collections
+                founded by African automotive enthusiasts and fashion creative visionaries, our collections
                 celebrate the marriage of engineering precision and visual craft. each piece embodies the spirit
                 of innovation, performance, and luxury that defines the automotive world.
               </p>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Our design philosophy centers on the belief that fashion, like automotive design, should push
+                our design philosophy centers on the belief that fashion, like automotive design, should push
                 boundaries while maintaining functionality and style. every stitch, every line, every detail is
                 crafted with the same attention to detail found in the world's finest vehicles.
               </p>
-              <Button>Discover Our Vision</Button>
+              <Button>discover our vision</Button>
             </div>
             <div className="aspect-[4/5] overflow-hidden rounded-lg">
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1729040268167-b89ff6b163c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MXx8fHwxNzU2NzM5NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="About ASARE"
+                alt="about asarē"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -178,9 +181,9 @@ export default function App() {
       <section id="categories" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl mb-4">System Catalog</h2>
+            <h2 className="text-4xl mb-4">system catalog</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Each category mirrors a facet of automotive culture, from everyday utility to high-performance
+              each category mirrors a facet of automotive culture, from everyday utility to high-performance
               engineering.
             </p>
           </div>
@@ -202,10 +205,10 @@ export default function App() {
       <section id="collection" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl mb-4">Current Collection</h2>
+            <h2 className="text-4xl mb-4">current collection</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-             In this collection, our designs are mapped by the function-first philosophy of the Land Rover
-              Defender, 90s build, and its contrasting color panels.
+             in this collection, our designs are mapped by the function-first philosophy of the land rover
+              defender, 90s build, and its contrasting color panels.
             </p>
           </div>
           
@@ -220,7 +223,7 @@ export default function App() {
                   />
                 </div>
                 <h3 className="mb-1">{item.name}</h3>
-                <p className="text-sm text-muted-foreground mb-2">Inspired by {item.vehicle}</p>
+                <p className="text-sm text-muted-foreground mb-2">inspired by {item.vehicle}</p>
                 <p className="">{item.price}</p>
               </div>
             ))}
@@ -228,7 +231,7 @@ export default function App() {
           
           <div className="text-center mt-12">
             <Button size="lg" variant="outline">
-              View Full Collection
+              view full collection
             </Button>
           </div>
         </div>
@@ -238,9 +241,9 @@ export default function App() {
       <section id="contact" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl mb-4">Visit Our Flagship Store</h2>
+            <h2 className="text-4xl mb-4">visit our flagship store</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Book a private styling session in our automotive-inspired fitting rooms. Our stylists will help you
+              book a private styling session in our automotive-inspired fitting rooms. our stylists will help you
               find pieces that match your favorite vehicle's aesthetic.
             </p>
           </div>
@@ -250,7 +253,7 @@ export default function App() {
               <div className="aspect-video bg-gray-200 rounded-lg mb-8 flex items-center justify-center">
                 <div className="text-center">
                   <Car className="h-12 w-12 mx-auto mb-4 text-muted-foreground" />
-                  <p className="text-muted-foreground">Interactive Showroom Map</p>
+                  <p className="text-muted-foreground">interactive showroom map</p>
                 </div>
               </div>
               
@@ -258,65 +261,65 @@ export default function App() {
                 <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 mt-1 text-primary" />
                   <div>
-                    <p>456 Automotive Way</p>
-                    <p className="text-muted-foreground">Detroit, MI 48201</p>
+                    <p>456 automotive way</p>
+                    <p className="text-muted-foreground">detroit, mi 48201</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-primary" />
-                  <p>+1 (313) 555-ASARE</p>
+                  <p>+1 (313) 555-asarē</p>
                 </div>
                 
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-primary" />
-                  <p>hello@asarefashion.com</p>
+                  <p>hello@asarebrand.com</p>
                 </div>
               </div>
             </div>
             
             <div>
-              <h3 className="text-2xl mb-6">Showroom Hours</h3>
+              <h3 className="text-2xl mb-6">showroom hours</h3>
               <div className="space-y-3 mb-8">
                 <div className="flex justify-between">
-                  <span>Monday - Friday</span>
-                  <span className="text-muted-foreground">10:00 AM - 8:00 PM</span>
+                  <span>monday - friday</span>
+                  <span className="text-muted-foreground">10:00 am - 8:00 pm</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Saturday</span>
-                  <span className="text-muted-foreground">10:00 AM - 9:00 PM</span>
+                  <span>saturday</span>
+                  <span className="text-muted-foreground">10:00 am - 9:00 pm</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Sunday</span>
-                  <span className="text-muted-foreground">12:00 PM - 6:00 PM</span>
+                  <span>sunday</span>
+                  <span className="text-muted-foreground">12:00 am - 6:00 pm</span>
                 </div>
               </div>
               
-              <h3 className="text-2xl mb-6">Private Consultations</h3>
+              <h3 className="text-2xl mb-6">private consultations</h3>
               <p className="text-muted-foreground mb-6">
-                Book a private styling session in our automotive-inspired fitting rooms. 
+                book a private styling session in our automotive-inspired fitting rooms. 
                 Our stylists will help you find pieces that match your favorite vehicle's aesthetic.
               </p>
-              <Button className="mb-8">Book Consultation</Button>
+              <Button className="mb-8">book consultation</Button>
               
-              <h3 className="text-2xl mb-6">Vehicle Design Tours</h3>
+              <h3 className="text-2xl mb-6">vehicle design tours</h3>
               <p className="text-muted-foreground mb-6">
-                Join our monthly tours where we showcase how specific vehicle designs 
+                join our monthly tours where we showcase how specific vehicle designs 
                 inspired our latest collections.
               </p>
-              <Button variant="outline">Schedule Tour</Button>
+              <Button variant="outline">schedule tour</Button>
             </div>
           </div>
         </div>
       </section>
 
       {/* Job Vacancies Section */}
-      <section id="careers" className="py-20 px-4">
+      {/* <section id="careers" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl mb-4">Join Our Team</h2>
+            <h2 className="text-4xl mb-4">join our team</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Be part of the team that's revolutionizing fashion through automotive inspiration. 
+              be part of the team that's revolutionizing fashion through automotive inspiration. 
               Drive innovation in the intersection of design and engineering.
             </p>
           </div>
@@ -362,28 +365,28 @@ export default function App() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Newsletter Section */}
       <section className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl mb-4">Stay in the Fast Lane</h2>
+          <h2 className="text-4xl mb-4">stay in the fast lane</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Subscribe to our newsletter and be the first to know about new vehicle-inspired 
+            subscribe to our newsletter and be the first to know about new vehicle-inspired 
             collections, exclusive collaborations, and behind-the-scenes design insights.
           </p>
           
           <div className="max-w-md mx-auto flex gap-4">
             <Input
               type="email"
-              placeholder="Enter your email"
+              placeholder="enter your email"
               className="flex-1"
             />
-            <Button>Subscribe</Button>
+            <Button>subscribe</Button>
           </div>
           
           <p className="text-sm text-muted-foreground mt-4">
-            By subscribing, you agree to our privacy policy and terms of service.
+            by subscribing, you agree to our privacy policy and terms of service.
           </p>
         </div>
       </section>
@@ -393,9 +396,9 @@ export default function App() {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-2xl mb-4">ASARE</h3>
+              <h3 className="text-2xl mb-4">asarē</h3>
               <p className="text-primary-foreground/80 mb-4">
-                Fashion inspired by automotive excellence.
+                fashion inspired by automotive excellence.
               </p>
               <div className="flex gap-4">
                 <Instagram className="h-5 w-5 cursor-pointer hover:text-primary-foreground/80" />
@@ -405,38 +408,38 @@ export default function App() {
             </div>
             
             <div>
-              <h4 className="mb-4">Collections</h4>
+              <h4 className="mb-4">collections</h4>
               <ul className="space-y-2 text-primary-foreground/80">
-                <li><a href="#" className="hover:text-primary-foreground">Luxury Cars</a></li>
-                <li><a href="#" className="hover:text-primary-foreground">Sports Cars</a></li>
-                <li><a href="#" className="hover:text-primary-foreground">Motorcycles</a></li>
-                <li><a href="#" className="hover:text-primary-foreground">Vintage</a></li>
+                <li><a href="#" className="hover:text-primary-foreground">luxury cars</a></li>
+                <li><a href="#" className="hover:text-primary-foreground">sports cars</a></li>
+                <li><a href="#" className="hover:text-primary-foreground">motorcycles</a></li>
+                <li><a href="#" className="hover:text-primary-foreground">vintage</a></li>
               </ul>
             </div>
             
             <div>
-              <h4 className="mb-4">Support</h4>
+              <h4 className="mb-4">support</h4>
               <ul className="space-y-2 text-primary-foreground/80">
-                <li><a href="#" className="hover:text-primary-foreground">Size Guide</a></li>
-                <li><a href="#" className="hover:text-primary-foreground">Shipping</a></li>
-                <li><a href="#" className="hover:text-primary-foreground">Returns</a></li>
-                <li><a href="#" className="hover:text-primary-foreground">Contact</a></li>
+                <li><a href="#" className="hover:text-primary-foreground">size guide</a></li>
+                <li><a href="#" className="hover:text-primary-foreground">shipping</a></li>
+                <li><a href="#" className="hover:text-primary-foreground">returns</a></li>
+                <li><a href="#" className="hover:text-primary-foreground">contact</a></li>
               </ul>
             </div>
             
             <div>
-              <h4 className="mb-4">Company</h4>
+              <h4 className="mb-4">company</h4>
               <ul className="space-y-2 text-primary-foreground/80">
-                <li><a href="#" className="hover:text-primary-foreground">About</a></li>
-                <li><a href="#" className="hover:text-primary-foreground">Careers</a></li>
-                <li><a href="#" className="hover:text-primary-foreground">Collaborations</a></li>
-                <li><a href="#" className="hover:text-primary-foreground">Press</a></li>
+                <li><a href="#" className="hover:text-primary-foreground">about</a></li>
+                <li><a href="#" className="hover:text-primary-foreground">careers</a></li>
+                <li><a href="#" className="hover:text-primary-foreground">collaborations</a></li>
+                <li><a href="#" className="hover:text-primary-foreground">press</a></li>
               </ul>
             </div>
           </div>
           
           <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center text-primary-foreground/60">
-            <p>&copy; 2024 ASARE. All rights reserved.</p>
+            <p>&copy; {year.getFullYear()} asarē. all rights reserved.</p>
           </div>
         </div>
       </footer>
