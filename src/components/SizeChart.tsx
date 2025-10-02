@@ -13,17 +13,17 @@ export function SizeChart() {
   return (
     <Card className="w-full">
       <CardHeader>
-        <CardTitle>Size Guide</CardTitle>
+        <CardTitle>size guide</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b">
-                <th className="text-left py-2">Size</th>
-                <th className="text-left py-2">Chest</th>
-                <th className="text-left py-2">Waist</th>
-                <th className="text-left py-2">Hips</th>
+                <th className="text-left py-2">size</th>
+                <th className="text-left py-2">chest</th>
+                <th className="text-left py-2">waist</th>
+                <th className="text-left py-2">hips</th>
               </tr>
             </thead>
             <tbody>
@@ -39,8 +39,8 @@ export function SizeChart() {
           </table>
         </div>
         <div className="mt-4 text-xs text-muted-foreground">
-          <p>All measurements in inches</p>
-          <p>For best fit, measure around the fullest part of your body</p>
+          <p>all measurements in inches</p>
+          <p>for best fit, measure around the fullest part of your body</p>
         </div>
       </CardContent>
     </Card>
