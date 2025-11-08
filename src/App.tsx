@@ -46,25 +46,25 @@ export default function App() {
       name: 'tesla model s blazer',
       price: '$450',
       vehicle: 'tesla model s',
-      image: "https://www.dropbox.com/scl/fi/caike5j5l3pxknv0um7bt/IMG_2254.JPG?rlkey=obdqpbwua86xwggmv974as6v6&st=ykyymihd&dl=1"
+      image: "https://www.dropbox.com/scl/fi/snrfj4zwo3jc6sjs3554o/IMG_2271.JPG?rlkey=22kt5k7m0fputcg1qbq8puzl7&st=j4gd6zz7&dl=1"
     },
     {
       name: 'porsche 911 leather jacket',
       price: '$650',
       vehicle: 'porsche 911',
-      image: "https://www.dropbox.com/scl/fi/2tymqboy6dajggj76yhen/IMG_2264.JPG?rlkey=13hzxyr0713iv6oriuhvu8ss2&st=5mkoycoj&dl=1"
+      image: "https://www.dropbox.com/scl/fi/pxmd4e1uomipsa1gypqz8/IMG_2276.JPG?rlkey=bxrbtni1wbz2p318b178a7ac7&st=348ahf9a&dl=1"
     },
     {
       name: 'ferrari f1 racing suit',
       price: '$850',
       vehicle: 'ferrari f1',
-      image: "https://www.dropbox.com/scl/fi/s946dkuok1da0sk4ob61s/IMG_2263.JPG?rlkey=je17847jh6aztf0sdqd5skdwd&st=x4qye57n&dl=1"
+      image: "https://www.dropbox.com/scl/fi/hi1j45j9gjjflx4x8p41j/IMG_2355.JPG?rlkey=ii9ukke0oge7ggh7majg53g2k&st=8b0bkxak&dl=1"
     },
     {
       name: 'range rover executive coat',
       price: '$720',
       vehicle: 'range rover',
-      image: "https://www.dropbox.com/scl/fi/g66zc1zuve7a6bgxgvmxl/IMG_2277.JPG?rlkey=oczkk9j3sbq0r19fc1ytgwt1u&st=ju4q7ta8&dl=1"
+      image: "https://www.dropbox.com/scl/fi/vowcpq57gdorjq6ai045s/IMG_2548.JPG?rlkey=v7xjs837n3f9ewyena1vgxgwz&st=92ijt9dv&dl=1"
     }
   ];
 
@@ -105,7 +105,7 @@ export default function App() {
       <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1697914584244-26e5d58eda67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBjYXIlMjBmYXNoaW9ufGVufDF8fHx8MTc1NjczOTM5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            src="https://cdn.prod.website-files.com/6355c243d169187442c3bc57/64e3e38f6190e8e5e4d1b6ca_Arles_Blue_Posts_0101_Layer%2010.jpg"
             alt="asarē hero"
             className="w-full h-full object-cover"
           />
