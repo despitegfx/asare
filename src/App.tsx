@@ -26,6 +26,12 @@ export default function App() {
 
   ];
 
+  const whoWeAreImages = [
+    "https://www.dropbox.com/scl/fi/cvzdpcf8kp0ggt0i0rk1h/DEBUT-COLLECTION-NOTES-.zip-1.png?rlkey=zfzn1t4scg5wgiqlabfirwlfp&st=644y6oud&dl=1",
+    "https://www.dropbox.com/scl/fi/2906664u0xaf3kjq7jwsd/DEBUT-COLLECTION-NOTES-.zip-2.png?rlkey=tdxvu7arr94h2ag9y45cx9rc1&st=sl8fvnpa&dl=1"
+
+  ];
+
   const categories = [
     { name: 'Casual', description: 'Inspired by daily drives and comfort' },
     { name: 'Smart Casual', description: 'Sophisticated automotive elegance' },
@@ -46,25 +52,25 @@ export default function App() {
       name: 'tesla model s blazer',
       price: '$450',
       vehicle: 'tesla model s',
-      image: "https://www.dropbox.com/scl/fi/snrfj4zwo3jc6sjs3554o/IMG_2271.JPG?rlkey=22kt5k7m0fputcg1qbq8puzl7&st=j4gd6zz7&dl=1"
+      image: "https://www.dropbox.com/scl/fi/7tfyb3rdh792wm56iyq0v/IMG_2265.JPG?rlkey=nscl9wt8sknw613i98br1fz4p&st=ug5375vd&dl=1"
     },
     {
       name: 'porsche 911 leather jacket',
       price: '$650',
       vehicle: 'porsche 911',
-      image: "https://www.dropbox.com/scl/fi/pxmd4e1uomipsa1gypqz8/IMG_2276.JPG?rlkey=bxrbtni1wbz2p318b178a7ac7&st=348ahf9a&dl=1"
+      image: "https://www.dropbox.com/scl/fi/ddqyh4vvk0z2rxulz6aid/IMG_2274.JPG?rlkey=forfueu02amr4m3nzuepextiv&st=68b36cyu&dl=1"
     },
     {
       name: 'ferrari f1 racing suit',
       price: '$850',
       vehicle: 'ferrari f1',
-      image: "https://www.dropbox.com/scl/fi/hi1j45j9gjjflx4x8p41j/IMG_2355.JPG?rlkey=ii9ukke0oge7ggh7majg53g2k&st=8b0bkxak&dl=1"
+      image: "https://www.dropbox.com/scl/fi/7ncb5u4fsr6plv7oo551n/IMG_2344.JPG?rlkey=bgv3fcdsfmht19ugfkb3o2555&st=jqtxm3si&dl=1"
     },
     {
       name: 'range rover executive coat',
       price: '$720',
       vehicle: 'range rover',
-      image: "https://www.dropbox.com/scl/fi/vowcpq57gdorjq6ai045s/IMG_2548.JPG?rlkey=v7xjs837n3f9ewyena1vgxgwz&st=92ijt9dv&dl=1"
+      image: "https://www.dropbox.com/scl/fi/drjuvupfxlvg4d4bzr0dy/IMG_2275.JPG?rlkey=efs8zf74ljhwt6hupv0lyhsbe&st=jky4ku2x&dl=1"
     }
   ];
 
@@ -136,7 +142,7 @@ export default function App() {
               {/* Image Gallery - Right Side */}
               <div className="flex justify-center">
                 <div className="w-full max-w-md">
-                  <ImageGallery images={galleryImages} />
+                  <ImageGallery images={galleryImages} automate={true} />
                 </div>
               </div>
             </div>
@@ -175,12 +181,8 @@ export default function App() {
               </p>
               <Button>discover our vision</Button>
             </div>
-            <div className="aspect-[4/5] overflow-hidden rounded-lg">
-              <ImageWithFallback
-                src="https://www.dropbox.com/scl/fi/drnyvc245kwdeckh2qztu/IMG_2251.JPG?rlkey=gm6jv4hoerqxgvzjvjdlhjzt0&st=3j6idti9&dl=1"
-                alt="about asarē"
-                className="w-full h-full object-cover"
-              />
+            <div className="aspect-[4/5]  rounded-lg">
+                    <ImageGallery images={whoWeAreImages} />
             </div>
           </div>
         </div>
