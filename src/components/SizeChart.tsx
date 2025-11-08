@@ -2,12 +2,12 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 
 export function SizeChart() {
   const sizes = [
-    { size: 'XS', chest: '34-36', waist: '28-30', hips: '36-38' },
-    { size: 'S', chest: '36-38', waist: '30-32', hips: '38-40' },
-    { size: 'M', chest: '38-40', waist: '32-34', hips: '40-42' },
-    { size: 'L', chest: '40-42', waist: '34-36', hips: '42-44' },
-    { size: 'XL', chest: '42-44', waist: '36-38', hips: '44-46' },
-    { size: 'XXL', chest: '44-46', waist: '38-40', hips: '46-48' },
+    { size: 'XS', chest: '28-32', waist: '18-23', hips: '30-34' },
+    { size: 'S', chest: '32-35', waist: '24-27', hips: '35-38' },
+    { size: 'M', chest: '36-38', waist: '28-31', hips: '39-41' },
+    { size: 'L', chest: '39-41', waist: '32-35', hips: '42-44' },
+    { size: 'XL', chest: '42-44', waist: '36-39', hips: '45-47' },
+    { size: 'XXL', chest: '45-48', waist: '40-43', hips: '48-51' },
   ];
 
   return (
