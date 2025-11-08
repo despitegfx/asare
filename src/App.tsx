@@ -11,10 +11,19 @@ import { log } from 'console';
 
 export default function App() {
   const galleryImages = [
-    "https://images.unsplash.com/photo-1697914584244-26e5d58eda67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBjYXIlMjBmYXNoaW9ufGVufDF8fHx8MTc1NjczOTM5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    "https://images.unsplash.com/photo-1610643981357-8b6a16ae2521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3RvcmN5Y2xlJTIwamFja2V0JTIwbGVhdGhlcnxlbnwxfHx8fDE3NTY3MzkzOTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    "https://images.unsplash.com/photo-1605868752262-58f35d6ef92b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyYWNpbmclMjBzdWl0JTIwZmFzaGlvbnxlbnwxfHx8fDE3NTY3Mzk0MDN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    "https://images.unsplash.com/photo-1729040268167-b89ff6b163c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MXx8fHwxNzU2NzM5NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    "https://www.dropbox.com/scl/fi/ttmqoueulssgq8c9vq1ah/IMG_2253.JPG?rlkey=avkjhugu4puwmjpk1sz3sd95t&st=myaqkdis&dl=1",
+    "https://www.dropbox.com/scl/fi/rncrlx52tmu3hpm3b3qll/IMG_2268.JPG?rlkey=whgnnl97jawacogbqa40xshfq&st=397u9uri&dl=1",
+    "https://www.dropbox.com/scl/fi/pw4vqg4h23gsuvfvs9yco/IMG_2327.JPG?rlkey=lrw1eefkzug6as1se3wepl9em&st=oacy4b9u&dl=1",
+    "https://www.dropbox.com/scl/fi/tz101b9jocw82lnxvijsa/IMG_2280.JPG?rlkey=bphy79633v904eikm1vhi1uvv&st=v9ae5jag&dl=1",
+    "https://www.dropbox.com/scl/fi/caike5j5l3pxknv0um7bt/IMG_2254.JPG?rlkey=obdqpbwua86xwggmv974as6v6&st=ykyymihd&dl=1",
+    "https://www.dropbox.com/scl/fi/2tymqboy6dajggj76yhen/IMG_2264.JPG?rlkey=13hzxyr0713iv6oriuhvu8ss2&st=5mkoycoj&dl=1",
+    "https://www.dropbox.com/scl/fi/s946dkuok1da0sk4ob61s/IMG_2263.JPG?rlkey=je17847jh6aztf0sdqd5skdwd&st=x4qye57n&dl=1",
+    "https://www.dropbox.com/scl/fi/g66zc1zuve7a6bgxgvmxl/IMG_2277.JPG?rlkey=oczkk9j3sbq0r19fc1ytgwt1u&st=ju4q7ta8&dl=1",
+    "https://www.dropbox.com/scl/fi/gt5qx33j4s4pgu2sjl4oj/IMG_2346.JPG?rlkey=ay349oxwoug3dkzuz3zbz29ik&st=nhxtrjs3&dl=1",
+    "https://www.dropbox.com/scl/fi/4s9yo9hqw72y26gwotfqt/IMG_2347.JPG?rlkey=n60zucgkkdcvvcclnjhd6ypmc&st=sv9e7pzo&dl=1",
+    "https://www.dropbox.com/scl/fi/nwvnghbfq46u3f4d0seky/IMG_2343.JPG?rlkey=t89glcapnw347d902n6qxzui6&st=fbe4hved&dl=1",
+    "https://www.dropbox.com/scl/fi/j85hem8txcabat9fmbxd1/IMG_2256.JPG?rlkey=a548n7i3prity5fg3enbnf3ed&st=whk3clsf&dl=1",
+
   ];
 
   const categories = [
@@ -37,25 +46,25 @@ export default function App() {
       name: 'tesla model s blazer',
       price: '$450',
       vehicle: 'tesla model s',
-      image: "https://images.unsplash.com/photo-1697914584244-26e5d58eda67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBjYXIlMjBmYXNoaW9ufGVufDF8fHx8MTc1NjczOTM5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      image: "https://www.dropbox.com/scl/fi/caike5j5l3pxknv0um7bt/IMG_2254.JPG?rlkey=obdqpbwua86xwggmv974as6v6&st=ykyymihd&dl=1"
     },
     {
       name: 'porsche 911 leather jacket',
       price: '$650',
       vehicle: 'porsche 911',
-      image: "https://images.unsplash.com/photo-1610643981357-8b6a16ae2521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3RvcmN5Y2xlJTIwamFja2V0JTIwbGVhdGhlcnxlbnwxfHx8fDE3NTY3MzkzOTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      image: "https://www.dropbox.com/scl/fi/2tymqboy6dajggj76yhen/IMG_2264.JPG?rlkey=13hzxyr0713iv6oriuhvu8ss2&st=5mkoycoj&dl=1"
     },
     {
       name: 'ferrari f1 racing suit',
       price: '$850',
       vehicle: 'ferrari f1',
-      image: "https://images.unsplash.com/photo-1605868752262-58f35d6ef92b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyYWNpbmclMjBzdWl0JTIwZmFzaGlvbnxlbnwxfHx8fDE3NTY3Mzk0MDN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      image: "https://www.dropbox.com/scl/fi/s946dkuok1da0sk4ob61s/IMG_2263.JPG?rlkey=je17847jh6aztf0sdqd5skdwd&st=x4qye57n&dl=1"
     },
     {
       name: 'range rover executive coat',
       price: '$720',
       vehicle: 'range rover',
-      image: "https://images.unsplash.com/photo-1729040268167-b89ff6b163c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MXx8fHwxNzU2NzM5NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      image: "https://www.dropbox.com/scl/fi/g66zc1zuve7a6bgxgvmxl/IMG_2277.JPG?rlkey=oczkk9j3sbq0r19fc1ytgwt1u&st=ju4q7ta8&dl=1"
     }
   ];
 
@@ -168,7 +177,7 @@ export default function App() {
             </div>
             <div className="aspect-[4/5] overflow-hidden rounded-lg">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1729040268167-b89ff6b163c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MXx8fHwxNzU2NzM5NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="https://www.dropbox.com/scl/fi/drnyvc245kwdeckh2qztu/IMG_2251.JPG?rlkey=gm6jv4hoerqxgvzjvjdlhjzt0&st=3j6idti9&dl=1"
                 alt="about asarē"
                 className="w-full h-full object-cover"
               />
