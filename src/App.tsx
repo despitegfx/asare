@@ -26,6 +26,12 @@ export default function App() {
 
   ];
 
+  const whoWeAreImages = [
+    "https://www.dropbox.com/scl/fi/cvzdpcf8kp0ggt0i0rk1h/DEBUT-COLLECTION-NOTES-.zip-1.png?rlkey=zfzn1t4scg5wgiqlabfirwlfp&st=644y6oud&dl=1",
+    "https://www.dropbox.com/scl/fi/2906664u0xaf3kjq7jwsd/DEBUT-COLLECTION-NOTES-.zip-2.png?rlkey=tdxvu7arr94h2ag9y45cx9rc1&st=sl8fvnpa&dl=1"
+
+  ];
+
   const categories = [
     { name: 'Casual', description: 'Inspired by daily drives and comfort' },
     { name: 'Smart Casual', description: 'Sophisticated automotive elegance' },
@@ -136,7 +142,7 @@ export default function App() {
               {/* Image Gallery - Right Side */}
               <div className="flex justify-center">
                 <div className="w-full max-w-md">
-                  <ImageGallery images={galleryImages} />
+                  <ImageGallery images={galleryImages} automate={true} />
                 </div>
               </div>
             </div>
@@ -175,12 +181,8 @@ export default function App() {
               </p>
               <Button>discover our vision</Button>
             </div>
-            <div className="aspect-[4/5] overflow-hidden rounded-lg">
-              <ImageWithFallback
-                src="https://www.dropbox.com/scl/fi/drnyvc245kwdeckh2qztu/IMG_2251.JPG?rlkey=gm6jv4hoerqxgvzjvjdlhjzt0&st=3j6idti9&dl=1"
-                alt="about asarē"
-                className="w-full h-full object-cover"
-              />
+            <div className="aspect-[4/5]  rounded-lg">
+                    <ImageGallery images={whoWeAreImages} />
             </div>
           </div>
         </div>
