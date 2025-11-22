@@ -7,7 +7,7 @@ import { Button } from './components/ui/button';
 import { Input } from './components/ui/input';
 import { Card, CardContent } from './components/ui/card';
 import { ArrowRight, MapPin, Phone, Mail, Instagram, Twitter, Facebook, Car, Zap, Users } from 'lucide-react';
-import { log } from 'console';
+
 
 export default function App() {
   const galleryImages = [
@@ -49,28 +49,28 @@ export default function App() {
 
   const collections = [
     {
-      name: 'tesla model s blazer',
-      price: '$450',
-      vehicle: 'tesla model s',
+      name: 'ASPHALT TECH PANTS Price',
+      price: 'Gh¢300',
+      vehicle: 'inspired by Land Rover Defender 90 build',
       image: "https://www.dropbox.com/scl/fi/7tfyb3rdh792wm56iyq0v/IMG_2265.JPG?rlkey=nscl9wt8sknw613i98br1fz4p&st=ug5375vd&dl=1"
     },
     {
-      name: 'porsche 911 leather jacket',
-      price: '$650',
-      vehicle: 'porsche 911',
+      name: 'Driftline Price',
+      price: 'Gh¢280',
+      vehicle: 'inspired by Land Rover 90 build',
       image: "https://www.dropbox.com/scl/fi/ddqyh4vvk0z2rxulz6aid/IMG_2274.JPG?rlkey=forfueu02amr4m3nzuepextiv&st=68b36cyu&dl=1"
     },
     {
-      name: 'ferrari f1 racing suit',
-      price: '$850',
-      vehicle: 'ferrari f1',
+      name: 'Heritage Tier Top with Ember tube Price',
+      price: 'Gh¢320 + Gh¢180',
+      vehicle: 'inspired by Land Rover 90 Build',
       image: "https://www.dropbox.com/scl/fi/7ncb5u4fsr6plv7oo551n/IMG_2344.JPG?rlkey=bgv3fcdsfmht19ugfkb3o2555&st=jqtxm3si&dl=1"
     },
     {
-      name: 'range rover executive coat',
-      price: '$720',
-      vehicle: 'range rover',
-      image: "https://www.dropbox.com/scl/fi/drjuvupfxlvg4d4bzr0dy/IMG_2275.JPG?rlkey=efs8zf74ljhwt6hupv0lyhsbe&st=jky4ku2x&dl=1"
+      name: 'ASPHALT TECH SHORTS Price',
+      price: 'Gh¢288',
+      vehicle: 'inspired by Land Rover 90 build',
+      image: "https://www.dropbox.com/scl/fi/nwvnghbfq46u3f4d0seky/IMG_2343.JPG?rlkey=t89glcapnw347d902n6qxzui6&st=uxpfcgkb&dl=1"
     }
   ];
 
@@ -254,37 +254,39 @@ export default function App() {
           <div className="text-center mb-16">
             <h2 className="text-4xl mb-4">visit our flagship store</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              book a private styling session in our automotive-inspired fitting rooms. our stylists will help you
-              find pieces that match your favorite vehicle's aesthetic.
+              book a private styling session in our automotive-inspired collections. our stylists will help you find pieces that match
+              your favorite vehicle's aesthetic from our available collections or from scratch
             </p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
               <div className="aspect-video bg-gray-200 rounded-lg mb-8 flex items-center justify-center">
-                <div className="text-center">
-                  <Car className="h-12 w-12 mx-auto mb-4 text-muted-foreground" />
-                  <p className="text-muted-foreground">interactive showroom map</p>
-                </div>
+                {/* <div className="text-center"> */}
+                  {/* <Car className="h-12 w-12 mx-auto mb-4 text-muted-foreground" /> */}
+                  {/* <p className="text-muted-foreground"> */}
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.179745078547!2d-0.32297088776473665!3d5.540342833780275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9084b2b7a773%3A0x6b366972840fe108!2sGMRH%2B4RQ%2C%20Accra!5e0!3m2!1sen!2sgh!4v1763805356412!5m2!1sen!2sgh" width="600" height="450" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                  {/* </p>  */}
+                {/* </div> */}
               </div>
               
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 mt-1 text-primary" />
                   <div>
-                    <p>456 automotive way</p>
-                    <p className="text-muted-foreground">detroit, mi 48201</p>
+                    <p>Tettey Soler, 10 Weija</p>
+                    <p className="text-muted-foreground"></p>
                   </div>
                 </div>
                 
                 <div className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-primary" />
-                  <p>+1 (313) 555-asarē</p>
+                  <p>+233 54 2519992</p>
                 </div>
                 
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-primary" />
-                  <p>hello@asarebrand.com</p>
+                  <p>Hello@asarebrand.com</p>
                 </div>
               </div>
             </div>
@@ -302,21 +304,24 @@ export default function App() {
                 </div>
                 <div className="flex justify-between">
                   <span>sunday</span>
-                  <span className="text-muted-foreground">12:00 am - 6:00 pm</span>
+                  <span className="text-muted-foreground">2:00 pm - 6:00 pm</span>
                 </div>
               </div>
               
               <h3 className="text-2xl mb-6">private consultations</h3>
               <p className="text-muted-foreground mb-6">
-                book a private styling session in our automotive-inspired fitting rooms. 
-                Our stylists will help you find pieces that match your favorite vehicle's aesthetic.
+                book a private styling session with us. our stylists will help you find pieces that match your
+                occasion, body type, and mood — from fit to finish, quietly intentional. <br/><br/>
+                slots available. <br/><br/>
+                email: Hello@asarebrand.com to book.
               </p>
               <Button className="mb-8">book consultation</Button>
               
               <h3 className="text-2xl mb-6">vehicle design tours</h3>
               <p className="text-muted-foreground mb-6">
-                join our monthly tours where we showcase how specific vehicle designs 
-                inspired our latest collections.
+                join our bimonthly e-tours where we break down how specific vehicle elements shape our pieces <br/>
+                — from interior textures to contour lines and bead placement. <br /><br />
+                see the collection through the eyes of the vehicle.
               </p>
               <Button variant="outline">schedule tour</Button>
             </div>
