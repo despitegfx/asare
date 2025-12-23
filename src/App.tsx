@@ -27,8 +27,8 @@ export default function App() {
   ];
 
   const whoWeAreImages = [
-    "https://www.dropbox.com/scl/fi/cvzdpcf8kp0ggt0i0rk1h/DEBUT-COLLECTION-NOTES-.zip-1.png?rlkey=zfzn1t4scg5wgiqlabfirwlfp&st=644y6oud&dl=1",
-    "https://www.dropbox.com/scl/fi/2906664u0xaf3kjq7jwsd/DEBUT-COLLECTION-NOTES-.zip-2.png?rlkey=tdxvu7arr94h2ag9y45cx9rc1&st=sl8fvnpa&dl=1"
+    "https://www.dropbox.com/scl/fi/mapjcuy7pd7mb776p4bsk/SERVOFORM-COLLECTION-NOTES-.zip-1.png?rlkey=hp3xrkzbh6pegpvdiq3aensqx&st=knh6n9sn&dl=1",
+    "https://www.dropbox.com/scl/fi/mhqtwozmtyuqx5nc3us8e/SERVOFORM-COLLECTION-NOTES-.zip-2.png?rlkey=0kc20mjmxsr2icghs1kdnminp&st=mjaoqj1g&dl=1"
 
   ];
 
@@ -49,25 +49,25 @@ export default function App() {
 
   const collections = [
     {
-      name: 'ASPHALT TECH PANTS Price',
+      name: 'ASPHALT TECH PANTS',
       price: 'Gh¢300',
       vehicle: 'inspired by Land Rover Defender 90 build',
       image: "https://www.dropbox.com/scl/fi/7tfyb3rdh792wm56iyq0v/IMG_2265.JPG?rlkey=nscl9wt8sknw613i98br1fz4p&st=ug5375vd&dl=1"
     },
     {
-      name: 'Driftline Price',
+      name: 'Driftline',
       price: 'Gh¢280',
       vehicle: 'inspired by Land Rover 90 build',
       image: "https://www.dropbox.com/scl/fi/ddqyh4vvk0z2rxulz6aid/IMG_2274.JPG?rlkey=forfueu02amr4m3nzuepextiv&st=68b36cyu&dl=1"
     },
     {
-      name: 'Heritage Tier Top with Ember tube Price',
+      name: 'Heritage Tier Top with Ember tube',
       price: 'Gh¢320 + Gh¢180',
       vehicle: 'inspired by Land Rover 90 Build',
       image: "https://www.dropbox.com/scl/fi/7ncb5u4fsr6plv7oo551n/IMG_2344.JPG?rlkey=bgv3fcdsfmht19ugfkb3o2555&st=jqtxm3si&dl=1"
     },
     {
-      name: 'ASPHALT TECH SHORTS Price',
+      name: 'ASPHALT TECH SHORTS',
       price: 'Gh¢288',
       vehicle: 'inspired by Land Rover 90 build',
       image: "https://www.dropbox.com/scl/fi/nwvnghbfq46u3f4d0seky/IMG_2343.JPG?rlkey=t89glcapnw347d902n6qxzui6&st=uxpfcgkb&dl=1"
@@ -234,7 +234,7 @@ export default function App() {
                   />
                 </div>
                 <h3 className="mb-1">{item.name}</h3>
-                <p className="text-sm text-muted-foreground mb-2">inspired by {item.vehicle}</p>
+                <p className="text-sm text-muted-foreground mb-2">{item.vehicle}</p>
                 <p className="">{item.price}</p>
               </div>
             ))}
@@ -252,7 +252,7 @@ export default function App() {
       <section id="contact" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl mb-4">visit our flagship store</h2>
+            <h2 className="text-4xl mb-4">visit us</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               book a private styling session in our automotive-inspired collections. our stylists will help you find pieces that match
               your favorite vehicle's aesthetic from our available collections or from scratch
@@ -294,14 +294,14 @@ export default function App() {
             <div>
               <h3 className="text-2xl mb-6">showroom hours</h3>
               <div className="space-y-3 mb-8">
-                <div className="flex justify-between">
+                {/* <div className="flex justify-between">
                   <span>monday - friday</span>
                   <span className="text-muted-foreground">10:00 am - 8:00 pm</span>
                 </div>
                 <div className="flex justify-between">
                   <span>saturday</span>
                   <span className="text-muted-foreground">10:00 am - 9:00 pm</span>
-                </div>
+                </div> */}
                 <div className="flex justify-between">
                   <span>sunday</span>
                   <span className="text-muted-foreground">2:00 pm - 6:00 pm</span>
@@ -313,7 +313,7 @@ export default function App() {
                 book a private styling session with us. our stylists will help you find pieces that match your
                 occasion, body type, and mood — from fit to finish, quietly intentional. <br/><br/>
                 slots available. <br/><br/>
-                email: Hello@asarebrand.com to book.
+                hello@asarebrand.com to book.
               </p>
               <Button className="mb-8">book consultation</Button>
               
