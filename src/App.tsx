@@ -57,19 +57,19 @@ export default function App() {
     {
       name: 'Driftline',
       price: 'Gh¢280',
-      vehicle: 'inspired by Land Rover 90 build',
+      vehicle: 'inspired by Land Rover Defender 90 build',
       image: "https://www.dropbox.com/scl/fi/ddqyh4vvk0z2rxulz6aid/IMG_2274.JPG?rlkey=forfueu02amr4m3nzuepextiv&st=68b36cyu&dl=1"
     },
     {
       name: 'Heritage Tier Top with Ember tube',
       price: 'Gh¢320 + Gh¢180',
-      vehicle: 'inspired by Land Rover 90 Build',
+      vehicle: 'inspired by Land Rover Defender 90 Build',
       image: "https://www.dropbox.com/scl/fi/7ncb5u4fsr6plv7oo551n/IMG_2344.JPG?rlkey=bgv3fcdsfmht19ugfkb3o2555&st=jqtxm3si&dl=1"
     },
     {
       name: 'ASPHALT TECH SHORTS',
       price: 'Gh¢288',
-      vehicle: 'inspired by Land Rover 90 build',
+      vehicle: 'inspired by Land Rover Defender 90 build',
       image: "https://www.dropbox.com/scl/fi/nwvnghbfq46u3f4d0seky/IMG_2343.JPG?rlkey=t89glcapnw347d902n6qxzui6&st=uxpfcgkb&dl=1"
     }
   ];
@@ -281,7 +281,7 @@ export default function App() {
                 
                 <div className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-primary" />
-                  <p>+233 54 2519992</p>
+                  <p>+233 54 251 9992</p>
                 </div>
                 
                 <div className="flex items-center gap-3">
@@ -414,7 +414,7 @@ export default function App() {
             <div>
               <h3 className="text-2xl mb-4">asarē</h3>
               <p className="text-primary-foreground/80 mb-4">
-                fashion inspired by automotive excellence.
+                clothing pieces inspired by vehicles and automobiles
               </p>
               <div className="flex gap-4">
                 <Instagram className="h-5 w-5 cursor-pointer hover:text-primary-foreground/80" />
